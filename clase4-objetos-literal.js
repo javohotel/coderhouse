@@ -16,3 +16,4 @@ auto.peso = 56; // le agrego un nuevo valor de atributo a la estructura del obje
 
 document.write(auto.modelo + "<br>"); //Imprimo el original
 document.write(auto1.modelo); //imprimo el nuevo valor
+ 
