@@ -1,0 +1,30 @@
+body{
+	font-family: "Trebuchet MS";
+}
+
+form{
+	width: 500px;
+	margin:auto;
+	font-size: 0.8em;
+}
+form p label{
+	display: block;
+}
+
+form p textarea{
+	resize: none;
+}
+
+#noticias article h2{
+	display: inline-block;
+	padding-left: 10px;
+	margin-bottom: 0;
+}
+
+.noticiaNueva{
+	color: blue;
+}
+
+.noticiaLeida{
+	color: black;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery selectores</title>
+	<link rel="stylesheet" href="css/clase11-selectores.css">
+
+</head>
+<body>
+
+	<header>
+		<h1>HEADER</h1>	
+	</header>
+
+	<div>
+		<ul class="lista">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+	</div>
+
+	<footer>
+		<p>Este es el footer</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("header").addClass("header");
+			$("footer").addClass("footer");
+			$(".lista li").css("padding","10px")
+			$(".lista li:even").css("background", "#ebebeb");
+			$(".lista li:first-child").css("font-weight", "bold");
+			$(".lista li:last-child").css("font-weight", "bold");
+		})
+	</script>
+	
+</body>
+</html>

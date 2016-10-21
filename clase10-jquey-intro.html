@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery intro</title>
+	<style>
+		.item {
+			background: #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<header>
+	
+</header>
+
+<div class="container">
+
+	
+</div>
+
+<button id="add">Agregar mas divs</button> <button id="color">seleccionar todos</button> <button id="delete">borrar	ultimo</button>
+
+<footer>
+	
+</footer>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			for(var i=0; i<3; i++){
+				$(".container").append("<div class='item'>Item " + i + "<div>");
+			}
+
+			$("#add").click(function(){
+				$(".container").append("<div class='item'>Item<div>");
+			});
+
+			$("#color").click(function(){
+				$(".item").css("background","red");
+			});
+
+			$(".item").click(function(){
+				$(this).css("background","red");
+			});
+
+			$("#delete").click(function(){
+				$(".item:last-child").remove();
+			});
+		})
+	</script>
+	
+</body>
+</html>

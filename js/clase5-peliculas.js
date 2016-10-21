@@ -83,12 +83,20 @@ unaPelicula.addActor("jack black");
 
 var actores = unaPelicula.getActores();
 
-// for in 
+// ciclo for in: Por cada indice en actores, imprime uno de esos indices y luego un <br> 
 
 for(i in actores) {
   document.write(actores[i] + "<br>")
 }
 
+// ciclo for: primero i es = 0, despues mientras i sea menor a 2 suma 1 vuelta, y abajo imprime actores solo hasta 2
+
 for(i = 0; i < 2; i++) {
   document.write(actores[i] + "<br>");
 }
+
+//Mientras i sea menor a 2 imprime peliculas
+while(i < 2){
+  document.write(actores[i] + "<br>");
+}
+

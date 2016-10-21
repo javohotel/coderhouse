@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form action="" onsubmit="return validarCamposVacios();">
+		<p>
+			<label for="">Escriba un título: </label>
+			<input type="text" id="txt_titulo"/>
+		</p>
+
+		<p>
+			<label for="">Agregue una descripción: </label>
+			<textarea id="txt_descripcion" id="" cols="40" rows="7"></textarea>
+		</p>
+
+		<p>
+			<label for="">Ingrese la URL de una imagen: </label>
+			<input type="text" id="txt_imagen">
+		</p>
+
+		<p>
+			<button type="submit" id="btn_agregar">Agregar</button>
+			<button id="btn_mostrar">Mostrar Datos</button>
+			<button id="btn_ordenar_asc">Ordenar ASC</button>
+			<button id="btn_ordenar_desc">Ordenar DESC</button>
+			<button id="btn_ordenar_id">Ordenar ID</button>
+		</p>
+	</form>
+
+	<div id="noticias"></div>
+	<script src="js/arregloYmodulo.js"></script>
+	<script src="js/principal.js"></script>
+	<script src="js/validaciones.js"></script>
+</body>
+</html>
